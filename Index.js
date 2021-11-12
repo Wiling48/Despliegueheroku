@@ -48,9 +48,8 @@ const { API_VERSION, IP_SERVER, PORT_DB } = require ("./config");
 /* mongoose.set("useFindAndMoify", false); */
 
 mongoose.connect(`mongodb+srv://${IP_SERVER}:${PORT_DB}`,
-{useNewUrlParser: true, useUnifiedTopology: true}, (err, res) => {
-    if (err){
-        throw err;
+{useNewUrlParser: true, useUnifiedTopology: true}, (err, res) => {if (err){
+         err;
     }else{
         console.log("La conexión a la base de datos es correcta");
 
